@@ -1,0 +1,40 @@
+<head>
+  <link type="text/css" rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <div class="header">
+    <h1>Apprentice News</h1>
+  </div>
+  <a href= '/submit' class="headerlink"> Submit </a>
+
+
+  <div class="body">
+    <h5><%= '=' * 100 %><br></h5>
+
+    <% @show_stuff.each do |row| %>
+    <% @id = "#{row['id']}" %>
+    <form style="float: right; margin-right: 10px;" method="post">
+    <div>
+      <textarea name="<%= @id %>" id="comments" style="font-family:sans-serif;font-size:1em;">
+      Comment...
+      </textarea>
+    </div>
+      <input type="submit" value="Submit">
+    </form>
+
+      <p><%= row['title'] %></p>
+      <a href = "<%= row['url'] %>" ><%= row['url'] %></a><br><br>
+      <button class="comment_button">Click Me for comments</button>
+      <div class = "comment_box">
+        <%= row['comments'] %>
+      </div>
+
+      <h5><%= '=' * 100 %><br></h5>
+
+
+  <% end %>
+  </div>
+
+
+</body>

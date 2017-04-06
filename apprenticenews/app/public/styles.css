@@ -1,0 +1,46 @@
+.header {
+  height: 88px;
+	background-color: #cdcdcd;
+  position: relative;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 7px;
+  border: solid 5px black;
+}
+
+h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family:  Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 3vw;
+  margin-top: 5px;
+}
+
+.headerlink {
+  font-family: "Trebuchet MS", Arial;
+  margin-left: 48.6%;
+  position: relative;
+}
+.headerlink2 {
+  font-family: "Trebuchet MS", Arial;
+  align: left;
+  position: relative;
+}
+
+.body {
+	background-color: #cdcdcd;
+  position: relative;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  margin-top: 3px;
+  text-align: center;
+  border: solid 5px black;
+}
+
+h5 {
+  font-size: 1vw;
+}
